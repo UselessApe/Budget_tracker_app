@@ -1,16 +1,20 @@
 # budget_tracker_app
 
-A new Flutter project.
+I created this project to learn more about actions, state, and UI updates in Flutter. This budget tracker application keeps track of your expenses. To visualize your expenses percent_indicator package was used. Also Provider Package was used. For saving light/dark mode 'shared preferences package' was used and for saving the budget 'Hive' was used as a local DB.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+pages/UI:
+- home
+  - appbar, contains headline 
+  - Light/Dark Mode
+  - bottom navigation bar, used to navigate through pages
+  - percent indicator which shows balance/budget and how much you already spent
+  - set budget possibility through dialog
+  - item/expenses
+    - delete expenses option through swipe
+    - add expenses/income through second dialog
+      - toogle to decide if it's an expense
+- history
+  - appbar, contains headline and backbutton
+- theme, based on ColorScheme.fromSeed
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
